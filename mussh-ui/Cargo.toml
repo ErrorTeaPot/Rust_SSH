@@ -1,0 +1,27 @@
+[package]
+name = "mussh-ui"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[[bin]]
+name = "ui"
+path = "src/main.rs"
+
+[[bin]]
+name = "input_fuzzer"
+path = "src/input_fuzzer.rs"
+
+[lib]
+name = "mussh_ui"
+path = "src/lib.rs"
+
+[dependencies]
+rand = "0.8"
+ratatui = "0.23.0"
+crossterm = "0.27.0"
+unicode-width = "0.1.11"
+mussh-protocol = { path = "../mussh-protocol" }
+rsa = { version = "0.9.6", features = ["serde"] }
+serde = "1.0.202"
+rpassword = "7.3.1"

@@ -1,0 +1,17 @@
+[package]
+name = "server"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+argon2 = "0.5.3"
+clap = { version = "4.5.4", features = ["derive"] }
+rand = "0.8.5"
+rpassword = "7.3.1"
+serde = "1.0.200"
+serde_json = "1.0.116"
+mussh-protocol = { path = "../mussh-protocol" }
+mussh-ui = { version = "0.1.0", path = "../mussh-ui" }
+rsa = { version = "0.9.6", features = ["serde"] }

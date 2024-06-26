@@ -1,0 +1,7 @@
+[workspace]
+members = [
+    "mussh-protocol",
+    "mussh-ui", 
+    "server",
+]
+resolver = "2"
